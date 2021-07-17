@@ -1,7 +1,5 @@
 package com.crud.salareunioes.exceptions;
 
-import java.sql.Date;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,10 +9,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ErrorDetails {
 	
-	private Date timestamp;
+	private Integer Status;
 	
 	private String msg;
-	
-	private String details;
 
+	private Long timestamp;
+	
+	
 }
