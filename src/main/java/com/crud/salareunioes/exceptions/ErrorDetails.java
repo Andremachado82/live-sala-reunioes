@@ -13,7 +13,7 @@ public class ErrorDetails {
 	
 	private String msg;
 
-	private Long timestamp;
+	private String timestamp;
 	
 	
 }
