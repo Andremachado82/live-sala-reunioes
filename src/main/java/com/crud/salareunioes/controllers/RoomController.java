@@ -40,13 +40,13 @@ public class RoomController {
 		return ResponseEntity.ok().body(roomService.getListRoom());
 	}
 	
-	@GetMapping("{id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<Room> getByIdRoom(@PathVariable Long id) throws ResourceNotFoundException {
 		
 		return ResponseEntity.ok().body(roomService.getById(id));
 	}
 	
-	@PutMapping("{id}")
+	@PutMapping("/{id}")
 	public ResponseEntity<Room> updateRoom(@PathVariable Long id, @Valid @RequestBody Room room) throws ResourceNotFoundException {
 		
 		return ResponseEntity.ok().body(roomService.updateRoom(id, room));
